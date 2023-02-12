@@ -1,0 +1,30 @@
+body{
+    background-color: #fffcfc;
+}
+
+/*Start Validation Styles*/
+input.val{
+    border-color: #36cc36;
+}
+
+input.invalid{
+    border-color: red;
+}
+
+form input + p {
+    font-family: arial, serif;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 10px;
+    opacity: 0;
+    color: darkred;
+    height: 0;
+}
+
+form input.invalid + p{
+    opacity: 1;
+    height: auto;
+    margin-top: 3px;
+}
+/*End Validation Styles*/
