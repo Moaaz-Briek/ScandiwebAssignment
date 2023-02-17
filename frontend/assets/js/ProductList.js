@@ -6,7 +6,7 @@ $(document).ready(() => {
                 products.forEach(product => {
                     $('.product').append(`                                                
                     <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-                        <div style="cursor: pointer;" class="card border-dark border-3 fs-5">
+                        <div class="card border-dark border-3 fs-5">
                             <div class="card-body">
                                 <input type="checkbox" class="delete-checkbox form-check-input border-dark" value="${product.id}">
                                 <P class="card-title text-center mb-0">${product.sku}</P>
