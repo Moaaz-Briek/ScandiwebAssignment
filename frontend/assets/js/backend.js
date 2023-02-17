@@ -41,7 +41,6 @@ $(document).ready(function(e)
           User may enter invalid data, so we will disable the form submission after that, but if you notice at line 106 I have enabled the form submission.
           I have done that because, if the user came back to correct the input data, we need to enable the button again at that point.
      */
-
     const inputs = document.querySelectorAll('input');
     const patterns = {
         // sku, name allow letters and digits only, no special characters, and no character length limit
@@ -75,9 +74,15 @@ $(document).ready(function(e)
         });
     });
 
+
+
     //Here we disable the form submission if inputs is invalid
     $('button').on('click', function (e){
-
+        var Typevalue = $('#productType').find(":selected").val();
+        if(!Typevalue) {
+            alert('Please select product type.');
+            e.preventDefault();
+        }
         $("form").find('input').each(function() {
             if($(this).attr('class').startsWith('invalid')){
                 $('button').attr('disabled', true);
