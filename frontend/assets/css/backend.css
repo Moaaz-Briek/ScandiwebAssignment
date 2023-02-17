@@ -28,3 +28,7 @@ form input.invalid + p{
     margin-top: 3px;
 }
 /*End Validation Styles*/
+
+.delete-checkbox {
+    cursor: pointer;
+}
