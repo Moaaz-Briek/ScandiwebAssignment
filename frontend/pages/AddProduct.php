@@ -65,18 +65,21 @@ include 'frontend/layout/header.php';
             </div>
         </div>
         <!--DVD select option-->
-        <div id="DVD" style="display: none" class="row mt-4 type">
-            <div class="col-lg-2 col-md-3  col-sm-4">
-                <label for="size" class="form-label w-100 fs-4 bg-transparent">Size (MB) </label>
+        <div id="DVD" style="display: none;" class="type">
+            <div class="row mt-4 ">
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                    <label for="size" class="form-label w-100 fs-4 bg-transparent">Size (MB) </label>
+                </div>
+                <div class="col-lg-6 col-md-9 col-sm-8">
+                    <input required placeholder="Enter Dvd Size" type="text" name="size" class="form-control" id="size">
+                    <p>Product Size is required, only numbers.</p>
+                    <label class="attribute">Please Provide Product Size</label>
+                </div>
             </div>
-            <div class="col-lg-6 col-md-9  col-sm-8">
-                <input required placeholder="Enter Dvd Size" type="text" name="size" class="form-control" id="size">
-                <p>Product Size is required, only numbers.</p>
-                <h6 class="mt-4">"Product Description"</h6>
-            </div>
+            <h4 class="mt-4">"Product Description"</h4>
         </div>
         <!--Furniture select option-->
-        <div id="Furniture" class="type" style="display: none">
+        <div id="Furniture" class="type" style="display: none;">
             <!--Height-->
             <div class="row mt-3">
                 <div class="col-lg-2 col-md-3  col-sm-4">
@@ -106,20 +109,24 @@ include 'frontend/layout/header.php';
                 <div class="col-lg-6 col-md-9  col-sm-8">
                     <input required placeholder="Enter Furniture Length" type="text" name="length" class="form-control" id="length">
                     <p>Product length is required, only numbers.</p>
-                    <h6 class="mt-4">"Product Description"</h6>
+                    <label class="attribute">Please Provide dimensions in HxWxL format.</label>
                 </div>
             </div>
+            <h4 class="mt-4">"Product Description"</h4>
         </div>
         <!--Book select option-->
-        <div id="Book" class="row mt-4 type" style="display: none">
-            <div class="col-lg-2 col-md-3  col-sm-4">
-                <label for="weight" class="form-label w-100 fs-4 bg-transparent">Weight (KG) </label>
+        <div id="Book" class="type" style="display: none">
+            <div class="row mt-4">
+                <div class="col-lg-2 col-md-3  col-sm-4">
+                    <label for="weight" class="form-label w-100 fs-4 bg-transparent">Weight (KG) </label>
+                </div>
+                <div class="col-lg-6 col-md-9  col-sm-8">
+                    <input required placeholder="Enter Book Weight" type="text" name="weight" class="form-control" id="weight">
+                    <p>Product weight is required, only numbers.</p>
+                    <label class="attribute">Please Provide weight in KG format.</label>
+                </div>
             </div>
-            <div class="col-lg-6 col-md-9  col-sm-8">
-                <input required placeholder="Enter Book Weight" type="text" name="weight" class="form-control" id="weight">
-                <p>Product weight is required, only numbers.</p>
-                <h6 class="mt-4">"Product Description"</h6>
-            </div>
+            <h4 class="mt-4">"Product Description"</h4>
         </div>
     </form>
 </div>
