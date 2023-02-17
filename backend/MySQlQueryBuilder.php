@@ -3,8 +3,8 @@
 abstract class MySQlQueryBuilder
 {
     private PDO $pdoConnection;
-    private $query = '';
-    private $tableName;
+    private string $query = '';
+    private string $tableName;
     private $stmt;
     private array $data = array();
     function __construct($tableName)
