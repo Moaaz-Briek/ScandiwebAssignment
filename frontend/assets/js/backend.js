@@ -17,20 +17,6 @@ $(document).ready(function(e)
     });
     /* (End) */
 
-    /* (Start) Make the product card clickable.*/
-    $(document).on('click', '.card-body', function ()
-    {
-        //We check first if the div checkbox children is checked, if not then chick it.
-        if(!$(this).children(".delete-checkbox").is(":checked")) {
-            $(this).children(".delete-checkbox").prop('checked', true);
-        }
-        // If it's actually checked uncheck it.
-        else {
-            $(this).children(".delete-checkbox").prop('checked', false);
-        }
-    });
-
-
     /*
         Start Input Validation Process using regex
         ------------------------------------
