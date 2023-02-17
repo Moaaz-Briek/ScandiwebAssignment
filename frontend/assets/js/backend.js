@@ -13,7 +13,8 @@ $(document).ready(function(e)
     $('#productType').change(function (){
         var id = $(this).children(":selected").attr('id');
         $("div .type").hide();
-        $("div #"+id).fadeIn(500);
+        $('.attribute').fadeTo('', 1);
+        $("div #" + id).fadeIn(500).find('.attribute').fadeTo(3000, 0.5);
     });
     /* (End) */
 
